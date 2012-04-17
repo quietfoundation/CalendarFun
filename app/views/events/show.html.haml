@@ -1,0 +1,19 @@
+%h1 Event Details
+
+%p= link_to 'Edit', edit_event_path(@event)
+%p= link_to 'Delete', event_path(@event), method: :delete, confirm: 'Are you sure?'
+
+%dl
+  %dt Name
+  %dd= @event.name
+
+  %dt Start At
+  %dd= l @event.start_at
+
+  %dt End At
+  %dd= l @event.end_at
+
+  %dt Description
+  %dd= @event.description
+
+%p= link_to 'Back', calendar_path

@@ -1,0 +1,2 @@
+    root  /                                    :controller#:action
+calendar  /calendar(/:year(/:month))(.:format) calendar#index {:year=>/\d{4}/, :month=>/\d{1,2}/}
