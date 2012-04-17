@@ -1,6 +1,5 @@
-GIT
-  remote: git://github.com/excid3/event_calendar.git
-  revision: ca1844038cd521abe86d877d7c27b630313887e5
+PATH
+  remote: lib/event_calendar
   specs:
     event-calendar (2.5.0)
       event-calendar

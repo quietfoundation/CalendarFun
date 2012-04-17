@@ -7,7 +7,7 @@ gem 'rails', '3.2.1'
 
 gem 'haml'
 gem 'haml-rails'
-gem 'event-calendar', :require => 'event_calendar', :git => 'git://github.com/excid3/event_calendar.git'
+gem 'event-calendar', :require => 'event_calendar', path: 'lib/event_calendar'
 gem 'simple_form'
 gem 'sqlite3'
 
