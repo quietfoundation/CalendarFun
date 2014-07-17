@@ -16,3 +16,4 @@
 
 # Ignore bundled gems
 /vendor/bundle
+*.swp
