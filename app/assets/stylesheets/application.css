@@ -12,3 +12,14 @@
  *= require event_calendar
  *= require_tree .
 */
+
+.event-popup {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}

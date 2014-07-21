@@ -1,8 +1,13 @@
 
 = simple_form_for @event do |f|
   = f.input :name
-  = f.input :start_at
-  = f.input :end_at
+  = f.label :start_at
+  = f.text_field :start_at, class: 'date_picker'
+  = f.label :end_at
+  = f.text_field :end_at, class: 'date_picker'
   = f.input :description
-
   = f.button :submit
+
+
+:javascript
+  $(".date_picker").datepicker();
