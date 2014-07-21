@@ -1,2 +1,9 @@
-    root  /                                    :controller#:action
-calendar  /calendar(/:year(/:month))(.:format) calendar#index {:year=>/\d{4}/, :month=>/\d{1,2}/}
+      root        /                                    :controller#:action
+  calendar        /calendar(/:year(/:month))(.:format) calendar#index {:year=>/\d{4}/, :month=>/\d{1,2}/}
+    events GET    /events(.:format)                    events#index
+           POST   /events(.:format)                    events#create
+ new_event GET    /events/new(.:format)                events#new
+edit_event GET    /events/:id/edit(.:format)           events#edit
+     event GET    /events/:id(.:format)                events#show
+           PUT    /events/:id(.:format)                events#update
+           DELETE /events/:id(.:format)                events#destroy

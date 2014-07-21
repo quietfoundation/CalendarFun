@@ -2,6 +2,13 @@ class EventsController < ApplicationController
   before_filter :load, only: [:show, :edit, :update, :destroy]
 
   def show
+    @event = Event.find(params[:id])
+    if request.xhr?
+      render partial: 'popup'
+      return
+    else
+      # respond to normal request
+    end
   end
 
   def new
