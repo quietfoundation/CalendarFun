@@ -55,6 +55,7 @@ GEM
     hike (1.2.3)
     i18n (0.6.11)
     journey (1.0.4)
+    jquery-datetimepicker-rails (2.3.0.0)
     jquery-rails (3.1.1)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
@@ -133,6 +134,7 @@ DEPENDENCIES
   event-calendar!
   haml
   haml-rails
+  jquery-datetimepicker-rails
   jquery-rails
   libv8 (~> 3.16.14)
   rails (= 3.2.19)
