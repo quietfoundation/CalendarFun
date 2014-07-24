@@ -10,5 +10,6 @@
  *
  *= require_self
  *= require event_calendar
+ *= require jquery.datetimepicker
  *= require_tree .
 */

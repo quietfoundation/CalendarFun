@@ -8,10 +8,10 @@
   %dd= @event.name
 
   %dt Start At
-  %dd= l @event.start_at
+  %input#datetimepicker{:type => "text"}/
 
   %dt End At
-  %dd= l @event.end_at
+  %input#datetimepicker{:type => "text"}/
 
   %dt Description
   %dd= @event.description
